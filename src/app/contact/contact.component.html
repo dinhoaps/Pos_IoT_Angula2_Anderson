@@ -1,0 +1,40 @@
+
+  <div *ngFor = "let contact of contacts" >
+  	<app-contact2
+  	[contact] = "contact"
+  	(contactDeleted)="delete(contact)">
+  </app-contact2>
+
+  </div>
+
+
+
+<div *ngIf="loading">
+  Carregando...
+</div>
+
+<br /> <br />
+
+<!--<span class="badge badge-pill badge-light"> -->
+<div class="alert alert-info" role="alert">
+  <span class="badge badge-pill badge-light">
+Name:
+<input
+  type ="text"
+
+  [(ngModel)] = "inputName" /> <br />
+<!--</span> -->
+</span>
+<!-- <span class="badge badge-pill badge-light" > -->
+
+ Phone:
+<input
+  type ="text"
+
+  [(ngModel)] = "inputPhone" /> <br />
+</div>
+<!-- </span>-->
+
+<button (click)="insertContact()" class="btn btn-lg btn-secondary btn-sm">Inserir</button>
+
+<!-- class="btn btn-lg btn-primary"  -->
