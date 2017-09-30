@@ -5,6 +5,9 @@ import { RouterModule } from '@angular/router';
 
 import { HttpModule } from '@angular/http';
 
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
@@ -16,6 +19,8 @@ import { ContactsService } from './contact/contacts.service';
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
+    NavbarComponent,
     HeaderComponent,
     ContactComponent,
     Contact2Component,
